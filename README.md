@@ -1,0 +1,1 @@
+Hello, everything here so far is the humble beginnings of my 611 Data Science Project about bean curvature. 
