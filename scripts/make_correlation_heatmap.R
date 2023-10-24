@@ -15,3 +15,6 @@ heatmap <- ggplot(data = melted_cor_mat, aes(x = Var1, y = Var2, fill = value)) 
 
 output <- heatmap +
   geom_text(aes(x = Var1, y = Var2, label = value), color = "black", size = 2)
+
+ensure_directory("figures")
+ggsave("figures/correlation_heatmap.png", output)
