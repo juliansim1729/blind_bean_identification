@@ -11,13 +11,13 @@ This code builds a Docker container called beandock. We then run Docker using th
 docker run -d -e PASSWORD=pass --rm -p 8787:8787 -v $(pwd):/home/rstudio/project -t beandock
 ```
 
-*(!)* If you're using Windows Powershell, this command may not work for you. In that case, try the following command (where the parentheses surrounding pwd have been replaced with curly brackets instead)
+**(!)** If you're using Windows Powershell, this command may not work for you. In that case, try the following command (where the parentheses surrounding pwd have been replaced with curly brackets instead)
 
 ```
 docker run -d -e PASSWORD=pass --rm -p 8787:8787 -v ${pwd}:/home/rstudio/project -t beandock
 ```
 
-*(!)* If you're already using `localhost:8787`, you can change the second number to a different number, i.e. `8787:8786` and try using a different port.
+**(!)** If you're already using `localhost:8787`, you can change the second number to a different number, e.g. `8787:8786` and try using a different port.
 
 
 From there, we can log onto our locally hosted RStudio server. Open your preferred web browser, and navigate to `localhost:8787` (changing the number here if you had a busy port). Then, log on with the following credentials. Your username is `rstudio` and your password will be `pass`.
