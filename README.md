@@ -1,6 +1,6 @@
 # Bean Identification
 
-## Running This Code
+## Running This Project
 To start, open your preferred terminal and run:
 ```
 docker build . -t beandock
@@ -17,10 +17,9 @@ docker run -d -e PASSWORD=pass --rm -p 8787:8787 -v $(pwd):/home/rstudio/project
 docker run -d -e PASSWORD=pass --rm -p 8787:8787 -v ${pwd}:/home/rstudio/project -t beandock
 ```
 
-**(!)** If you're already using `localhost:8787`, you can change the second number to a different number, e.g. `8787:8786` and try using a different port.
+**(!)** If you're already using the port 8787, you can change the first number to a different number, i.e. `8786:8787` and try using a different port. This command is mapping the second number (the internal Docker port) to the first number (your external port) where you can access the page. Please note if you are selecting a new number, some ports may be reserved for common services (such as HTTP) and thus ports in the 8000s are commonly used for Docker.
 
-
-From there, we can log onto our locally hosted RStudio server. Open your preferred web browser, and navigate to `localhost:8787` (changing the number here if you had a busy port). Then, log on with the following credentials. Your username is `rstudio` and your password will be `pass`.
+From there, we can log onto our locally hosted RStudio server. Open your preferred web browser, and navigate to `localhost:8787` (changing the number here if you had a busy port). Then, log on with the following credentials. Your username is `rstudio` and your password is `pass`.
 
 ## Data Information
 
