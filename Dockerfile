@@ -1,5 +1,5 @@
 FROM rocker/verse
-RUN R -e "install.packages(\"reshape2\")"
+RUN R -e "install.packages(c(\"reshape2\", \"class\", \"caret\"))"
 RUN R -e "devtools::install_github('bbc/bbplot')"
 
 RUN apt update && apt install -y python3 python3-pip
