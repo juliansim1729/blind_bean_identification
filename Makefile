@@ -1,7 +1,11 @@
 
 clean:
-	rm -f intermediate_data/*
-	rm -f figures/*
+	rm -rf intermediate_data/*
+	rm -rf figures/*
+
+.created-dirs:
+	mkdir -p intermediate_data
+	mkdir -p figures
 
 # creates the base dataframes used for the rest of analysis
 # most of the cleaning and processing takes place within make_labeled_data.R

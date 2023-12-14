@@ -36,6 +36,10 @@ make clean
 ```
 
 ```
+make .created-dirs
+```
+
+```
 make report.pdf
 ```
 
