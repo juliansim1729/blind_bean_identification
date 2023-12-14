@@ -1,7 +1,6 @@
 # library calls
 library(readr)
 library(ggplot2)
-library(bbplot)
 
 # reading in data
 df <- read_csv("source_data/Dry_Bean_Dataset.csv")
@@ -14,7 +13,6 @@ output <- ggplot(data = df, aes(x = Class)) +
     labs(title = "Counts by Bean Species") + 
     xlab("Bean Class") +
     ylab("Count") +
-    bbc_style() +
     theme(axis.text.x=element_text(size=15))
 
 ggsave("figures/counts_by_class.png", output)

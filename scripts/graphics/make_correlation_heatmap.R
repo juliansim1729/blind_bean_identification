@@ -4,7 +4,8 @@ library(readr)
 library(ggplot2)
 
 # reading in data
-df <- read_csv("intermediate_data/deidentified_beans.csv")
+df <- read_csv("source_data/Dry_Bean_Dataset.csv")
+df <- df[, -17]
 
 # creating and graphing correlation matrix
 cor_mat <- cor(df)
